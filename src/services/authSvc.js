@@ -21,7 +21,6 @@ export function getRealmApp() {
     return user;
  }
 export async function loginEmailPassword(email, password) {
-    // Create an anonymous credential
     const credentials = Realm.Credentials.emailPassword(email, password);
     if(app.currentUser)
         return app.currentUser;
